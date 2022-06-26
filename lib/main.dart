@@ -7,6 +7,7 @@ Future<void> main(List<String> args) async {
   WidgetsFlutterBinding.ensureInitialized();
   Hive.initFlutter();
   if (!Hive.isAdapterRegistered(StudentModelAdapter().typeId)) {
+    
     Hive.registerAdapter(StudentModelAdapter());
   }
   runApp(const MyApp());

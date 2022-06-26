@@ -21,6 +21,7 @@ class _EditScreenState extends State<EditScreen> {
   String _imageNew = "";
   String _imageToString = "";
 
+
   pickImage() async {
     // ignore: deprecated_member_use
     final imageFromGallery =
@@ -148,7 +149,6 @@ class _EditScreenState extends State<EditScreen> {
                             ),
                             TextFormField(
                               validator: (value) {
-                                
                                 if (value == null || value.isEmpty) {
                                   return 'Enter Age';
                                 } else {
